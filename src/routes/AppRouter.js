@@ -21,6 +21,7 @@ import Quienessomos from '../public/pages/Quienessomos';
 import Preguntas from '../public/pages/Preguntas';
 import Politicas from '../public/pages/Politicas';
 import Contacto from '../public/pages/Contacto';
+import Recuperacion from '../public/auth/Recuperacion';
 
 export default function AppRouter() {
 
@@ -34,8 +35,13 @@ export default function AppRouter() {
             <Route path={routes.politicas} element={<Politicas/>}/>
             <Route path={routes.contacto} element={<Contacto/>} />
             <Route element={<PublicRoute />}>
+
+
                 <Route path={routes.login} element={<Login />} />
                 <Route path={routes.registro} element={<Registro />} />
+                <Route path={routes.Recuperacion} element={<Recuperacion/>} />
+
+
             </Route>
             <Route element={<PrivateRoute/>}>
                 <Route path={routes.perfil} element={<Cuenta />} />

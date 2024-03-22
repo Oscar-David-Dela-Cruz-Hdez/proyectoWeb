@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import useAuth from '../../auth/useAuth'
 import { Link, useLocation } from 'react-router-dom';
-import { Button, Card, Col, Container, FloatingLabel, Form, Image, Row } from 'react-bootstrap';
+import { Button, Card, Col, Container, FloatingLabel, Form,  Row } from 'react-bootstrap';
 import routes from '../../helpers/routes';
 import { loginRequest } from '../../api/auth';
 export default function Login() {
@@ -68,7 +68,7 @@ export default function Login() {
                   </Col>
                   <Col>
                     {/* Simple link */}
-                    <Link to={routes.home}>¿Olvidó su contraseña?</Link>
+                    <Link to={routes.recuperacion}>¿Olvidó su contraseña?</Link>
                   </Col>
                 </Row>
 
